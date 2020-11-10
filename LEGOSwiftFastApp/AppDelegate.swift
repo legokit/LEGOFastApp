@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     private func configureViewController() {
         self.window = UIWindow()
-        let controller = BaseNavigationController(rootViewController: FAMainViewController())
+        let controller = BaseNavigationController(rootViewController: BaseViewController())
         self.window?.rootViewController = controller
         self.window?.makeKeyAndVisible()
     }
