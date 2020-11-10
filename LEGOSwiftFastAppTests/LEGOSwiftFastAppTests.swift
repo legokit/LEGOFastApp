@@ -1,12 +1,12 @@
 //
-//  Swift_TemplateTests.swift
+//  LEGOSwiftFastAppTests.swift
 //  LEGOSwiftFastAppTests
 //
 //  Created by 马陈爽 on 2020/10/28.
 //
 
 import XCTest
-@testable import Swift_Template
+@testable import LEGOSwiftFastApp
 
 class LEGOSwiftFastAppTests: XCTestCase {
 

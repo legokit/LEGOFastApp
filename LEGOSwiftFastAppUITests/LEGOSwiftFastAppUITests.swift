@@ -1,5 +1,5 @@
 //
-//  Swift_TemplateUITests.swift
+//  LEGOSwiftFastAppUITests.swift
 //  LEGOSwiftFastAppUITests
 //
 //  Created by 马陈爽 on 2020/10/28.
