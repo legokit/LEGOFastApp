@@ -32,9 +32,9 @@ let logger: XCGLogger = {
     let logPath: URL = appDelegate.documentsDirectory.appendingPathComponent("XCGLogger_Log.txt")
     let autoRotatingFileDestination = AutoRotatingFileDestination(writeToFile: logPath, identifier: "advancedLogger.fileDestination", shouldAppend: true,
                                                                   attributes: [.protectionKey: FileProtectionType.completeUntilFirstUserAuthentication], // Set file attributes on the log file
-                                                                  maxFileSize: 1024 * 1024 * 10, // 5k, not a good size for production (default is 1 megabyte)
-                                                                  maxTimeInterval: 60 * 60 * 24, // 1 minute, also not good for production (default is 10 minutes)
-                                                                  targetMaxLogFiles: 7) // Default is 10, max is 255
+                                                                  maxFileSize: 1024 * 1024 * 10,
+                                                                  maxTimeInterval: 60 * 60 * 24,
+                                                                  targetMaxLogFiles: 7)
 
     // Optionally set some configuration options
     autoRotatingFileDestination.outputLevel = .debug

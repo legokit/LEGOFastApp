@@ -23,7 +23,7 @@
 		4218E50B2559334F005AA0E0 /* DESCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E50A2559334F005AA0E0 /* DESCrypto.swift */; };
 		4218E516255933C5005AA0E0 /* SHACrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E515255933C5005AA0E0 /* SHACrypto.swift */; };
 		4230D7A7255A713A00904CA7 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4230D7A5255A713A00904CA7 /* Database.xcdatamodeld */; };
-		42649EA12552BAAA00363585 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42649EA02552BAAA00363585 /* ImageManager.swift */; };
+		42649EA12552BAAA00363585 /* ImageCacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42649EA02552BAAA00363585 /* ImageCacheManager.swift */; };
 		427014F825500B3300A84D03 /* LEGOMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427014F725500B3300A84D03 /* LEGOMainViewController.swift */; };
 		427015032550163600A84D03 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427015022550163600A84D03 /* BaseNavigationController.swift */; };
 		4298066F25495F6100BBD1C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298066E25495F6100BBD1C4 /* AppDelegate.swift */; };
@@ -75,7 +75,7 @@
 		4218E50A2559334F005AA0E0 /* DESCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESCrypto.swift; sourceTree = "<group>"; };
 		4218E515255933C5005AA0E0 /* SHACrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHACrypto.swift; sourceTree = "<group>"; };
 		4230D7A6255A713A00904CA7 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
-		42649EA02552BAAA00363585 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		42649EA02552BAAA00363585 /* ImageCacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManager.swift; sourceTree = "<group>"; };
 		427014F725500B3300A84D03 /* LEGOMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEGOMainViewController.swift; sourceTree = "<group>"; };
 		427015022550163600A84D03 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		4298066B25495F6100BBD1C4 /* LEGOSwiftFastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEGOSwiftFastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -231,7 +231,7 @@
 		42649E9F2552BA4100363585 /* ImageCache */ = {
 			isa = PBXGroup;
 			children = (
-				42649EA02552BAAA00363585 /* ImageManager.swift */,
+				42649EA02552BAAA00363585 /* ImageCacheManager.swift */,
 			);
 			path = ImageCache;
 			sourceTree = "<group>";
@@ -638,7 +638,7 @@
 			files = (
 				4218E4762556BD1F005AA0E0 /* BottomUpAnimationController.swift in Sources */,
 				4218E47B2556E66E005AA0E0 /* VerticalSwipeInteractionController.swift in Sources */,
-				42649EA12552BAAA00363585 /* ImageManager.swift in Sources */,
+				42649EA12552BAAA00363585 /* ImageCacheManager.swift in Sources */,
 				42F6ED372555378E0078071A /* BaseAnimationController.swift in Sources */,
 				4218E4D125592949005AA0E0 /* MathOperator+Ext.swift in Sources */,
 				427015032550163600A84D03 /* BaseNavigationController.swift in Sources */,
