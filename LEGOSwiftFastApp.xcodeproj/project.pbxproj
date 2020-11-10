@@ -23,7 +23,7 @@
 		4218E50B2559334F005AA0E0 /* DESCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E50A2559334F005AA0E0 /* DESCrypto.swift */; };
 		4218E516255933C5005AA0E0 /* SHACrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E515255933C5005AA0E0 /* SHACrypto.swift */; };
 		42649EA12552BAAA00363585 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42649EA02552BAAA00363585 /* ImageManager.swift */; };
-		427014F825500B3300A84D03 /* FAMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427014F725500B3300A84D03 /* FAMainViewController.swift */; };
+		427014F825500B3300A84D03 /* LEGOMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427014F725500B3300A84D03 /* LEGOMainViewController.swift */; };
 		427015032550163600A84D03 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427015022550163600A84D03 /* BaseNavigationController.swift */; };
 		4298066F25495F6100BBD1C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298066E25495F6100BBD1C4 /* AppDelegate.swift */; };
 		4298067325495F6100BBD1C4 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4298067225495F6100BBD1C4 /* BaseViewController.swift */; };
@@ -74,7 +74,7 @@
 		4218E50A2559334F005AA0E0 /* DESCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESCrypto.swift; sourceTree = "<group>"; };
 		4218E515255933C5005AA0E0 /* SHACrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHACrypto.swift; sourceTree = "<group>"; };
 		42649EA02552BAAA00363585 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		427014F725500B3300A84D03 /* FAMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAMainViewController.swift; sourceTree = "<group>"; };
+		427014F725500B3300A84D03 /* LEGOMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEGOMainViewController.swift; sourceTree = "<group>"; };
 		427015022550163600A84D03 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		4298066B25495F6100BBD1C4 /* LEGOSwiftFastApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LEGOSwiftFastApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4298066E25495F6100BBD1C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -237,7 +237,7 @@
 		427014F325500AFC00A84D03 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				427014F725500B3300A84D03 /* FAMainViewController.swift */,
+				427014F725500B3300A84D03 /* LEGOMainViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -637,7 +637,7 @@
 				421357362552544E004AA89A /* Repository.swift in Sources */,
 				42F6ED64255554CA0078071A /* UIImage+Ext.swift in Sources */,
 				4218E4A92558E1BE005AA0E0 /* AppDelegate+Log.swift in Sources */,
-				427014F825500B3300A84D03 /* FAMainViewController.swift in Sources */,
+				427014F825500B3300A84D03 /* LEGOMainViewController.swift in Sources */,
 				4213573F25527433004AA89A /* NSManagedObjectContext+Ext.swift in Sources */,
 				4213572825525275004AA89A /* CoreDataStack.swift in Sources */,
 				4218E4F225592C15005AA0E0 /* Constant.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FAMainViewController: BaseViewController {
+class LEGOMainViewController: BaseViewController {
     
     private var bottomUpController: BaseAnimationController?
 
@@ -33,7 +33,7 @@ class FAMainViewController: BaseViewController {
     }
 }
 
-extension FAMainViewController: AbstractViewController {
+extension LEGOMainViewController: AbstractViewController {
     
     var animationController: BaseAnimationController? {
         return self.bottomUpController

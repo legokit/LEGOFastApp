@@ -41,7 +41,12 @@ class BaseViewController: UIViewController {
     }
     
     required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: coder)
+        if let controller = self as? AbstractViewController {
+            self.abstractVC = controller
+        } else {
+            assert(false, "Must implement FAAbstractViewController Protocol")
+        }
     }
     
     override func viewDidLoad() {
