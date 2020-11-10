@@ -22,6 +22,7 @@
 		4218E50425592FFD005AA0E0 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E50325592FFD005AA0E0 /* String+Ext.swift */; };
 		4218E50B2559334F005AA0E0 /* DESCrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E50A2559334F005AA0E0 /* DESCrypto.swift */; };
 		4218E516255933C5005AA0E0 /* SHACrypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4218E515255933C5005AA0E0 /* SHACrypto.swift */; };
+		4230D7A7255A713A00904CA7 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4230D7A5255A713A00904CA7 /* Database.xcdatamodeld */; };
 		42649EA12552BAAA00363585 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42649EA02552BAAA00363585 /* ImageManager.swift */; };
 		427014F825500B3300A84D03 /* LEGOMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427014F725500B3300A84D03 /* LEGOMainViewController.swift */; };
 		427015032550163600A84D03 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 427015022550163600A84D03 /* BaseNavigationController.swift */; };
@@ -73,6 +74,7 @@
 		4218E50325592FFD005AA0E0 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		4218E50A2559334F005AA0E0 /* DESCrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DESCrypto.swift; sourceTree = "<group>"; };
 		4218E515255933C5005AA0E0 /* SHACrypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SHACrypto.swift; sourceTree = "<group>"; };
+		4230D7A6255A713A00904CA7 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
 		42649EA02552BAAA00363585 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		427014F725500B3300A84D03 /* LEGOMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LEGOMainViewController.swift; sourceTree = "<group>"; };
 		427015022550163600A84D03 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
@@ -218,6 +220,14 @@
 			path = Crypto;
 			sourceTree = "<group>";
 		};
+		4230D762255A3B7600904CA7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4230D7A5255A713A00904CA7 /* Database.xcdatamodeld */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		42649E9F2552BA4100363585 /* ImageCache */ = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +281,7 @@
 				429806B825496AFC00BBD1C4 /* Class */,
 				429806BC25496B8400BBD1C4 /* Expand */,
 				4298067725495F6300BBD1C4 /* Assets.xcassets */,
+				4230D762255A3B7600904CA7 /* Resources */,
 				429806C325496D2B00BBD1C4 /* Supporting Files */,
 			);
 			path = LEGOSwiftFastApp;
@@ -641,6 +652,7 @@
 				4213573F25527433004AA89A /* NSManagedObjectContext+Ext.swift in Sources */,
 				4213572825525275004AA89A /* CoreDataStack.swift in Sources */,
 				4218E4F225592C15005AA0E0 /* Constant.swift in Sources */,
+				4230D7A7255A713A00904CA7 /* Database.xcdatamodeld in Sources */,
 				4218E50425592FFD005AA0E0 /* String+Ext.swift in Sources */,
 				4218E516255933C5005AA0E0 /* SHACrypto.swift in Sources */,
 				4218E4F725592CB5005AA0E0 /* UIDevice+Ext.swift in Sources */,
@@ -983,6 +995,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		4230D7A5255A713A00904CA7 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4230D7A6255A713A00904CA7 /* Database.xcdatamodel */,
+			);
+			currentVersion = 4230D7A6255A713A00904CA7 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4298066325495F6100BBD1C4 /* Project object */;
 }

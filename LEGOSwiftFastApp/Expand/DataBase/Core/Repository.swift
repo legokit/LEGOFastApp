@@ -16,7 +16,7 @@ protocol AbstractRepository {
     ///   - predicate: SQL语句
     ///   - sortDescriptors: 数据顺序，可选
     ///   - closure: 回调内容，数组 or 错误，默认子线程
-    func query(with predicate: NSPredicate,
+    func query(with predicate: NSPredicate?,
                sortDescriptors: [NSSortDescriptor]?,
                complete closure: @escaping ([T]?, Error?) -> Void)
     
@@ -56,7 +56,7 @@ final class Repository<T: Persistable>: AbstractRepository {
         self.context = context
     }
     
-    func query(with predicate: NSPredicate,
+    func query(with predicate: NSPredicate?,
                sortDescriptors: [NSSortDescriptor]?,
                complete closure: @escaping ([T]?, Error?) -> Void) {
         self.context.perform { [weak self] in
@@ -107,6 +107,7 @@ final class Repository<T: Persistable>: AbstractRepository {
                 }
                 self.context.delete(result)
                 try self.context.save()
+                closure(nil)
             } catch {
                 closure(error)
             }
@@ -139,7 +140,10 @@ final class Repository<T: Persistable>: AbstractRepository {
         self.context.perform { [weak self] in
             guard let `self` = self else { return }
             do {
-                let results = [T](repeating: self.context.create(), count: count)
+                var results = [T]()
+                for _ in 0 ..< count {
+                    results.append(self.context.create())
+                }
                 updateClosure(results)
                 try self.context.save()
                 completeClosure(nil)
@@ -164,6 +168,7 @@ final class Repository<T: Persistable>: AbstractRepository {
                     self.context.delete($0)
                 }
                 try self.context.save()
+                closure(nil)
             } catch {
                 closure(error)
             }

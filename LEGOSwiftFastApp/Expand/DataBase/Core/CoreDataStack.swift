@@ -9,12 +9,15 @@ import Foundation
 import CoreData
 
 final class CoreDataStack {
+    
+    static let share = CoreDataStack()
+    
     private let storeCoordinator: NSPersistentStoreCoordinator
     let context: NSManagedObjectContext
     
     public init() {
         let bundle = Bundle(for: CoreDataStack.self)
-        guard let url = bundle.url(forResource: "Model", withExtension: "momd"),
+        guard let url = bundle.url(forResource: "Database", withExtension: "momd"),
               let model = NSManagedObjectModel(contentsOf: url) else {
             fatalError()
         }
